@@ -41,7 +41,7 @@ const HomeScreen = ({ navigation }: any) => {
       setCurrentPlayer(player);
       await LobbyService.joinLobby(lobbyCode.toUpperCase(), player);
       navigation.navigate('Lobby', { lobbyId: lobbyCode.toUpperCase() });
-    } catch (error) {
+    } catch (error: any) {
       Alert.alert('Error', error.message || 'Kon niet deelnemen aan lobby');
     }
   };
