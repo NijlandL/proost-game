@@ -5,6 +5,4 @@ module.exports = function(api) {
   };
 };
       useESModules: false
-    }]
-  ]
-};
+    
