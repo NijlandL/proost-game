@@ -24,3 +24,22 @@ npm run build
 - Expo
 - Firebase Realtime Database
 - TypeScript
+
+## Scripts
+- npm start : Dev (native/web)
+- npm run web : Web dev
+- npm run build : Static export → dist (Netlify publishes dist)
+
+## Deployment (Netlify)
+Uses expo export (static web). Ensure Node 18 (already set in netlify.toml).
+
+## Fixes Applied
+- Removed missing plugin react-native-paper/babel
+- Fixed invalid babel.config.js
+- Cleaned metro.config.js
+- Added package.json, tsconfig
+
+## Local Build Test
+npm install
+npm run build
+Serve dist/ (e.g. npx serve dist)

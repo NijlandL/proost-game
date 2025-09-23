@@ -1,5 +1,5 @@
-const createExpoWebpackConfigAsync = require('@expo/webpack-config');
-
+// Not required for Expo (Metro used). Left intentionally minimal.
+module.exports = {};
 module.exports = async function (env, argv) {
   const config = await createExpoWebpackConfigAsync(
     {
