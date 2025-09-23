@@ -2,14 +2,11 @@
   "name": "proost-game",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "App.tsx",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo export --platform web --output-dir dist",
-    "clean": "rimraf node_modules dist && npm install"
+    "build": "expo export --platform web --output-dir dist"
   },
   "dependencies": {
     "expo": "^51.0.0",
@@ -28,6 +25,9 @@
     "typescript": "^5.4.0",
     "@types/react": "^18.2.45",
     "@types/react-native": "^0.73.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <19"
   }
 }
 

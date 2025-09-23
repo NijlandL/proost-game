@@ -1,4 +1,4 @@
-// Not required for Expo (Metro used). Left intentionally minimal.
+// Intentioneel leeg: Expo gebruikt Metro. Aanwezig om tooling stil te houden.
 module.exports = {};
 module.exports = async function (env, argv) {
   const config = await createExpoWebpackConfigAsync(

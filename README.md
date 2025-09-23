@@ -43,3 +43,28 @@ Uses expo export (static web). Ensure Node 18 (already set in netlify.toml).
 npm install
 npm run build
 Serve dist/ (e.g. npx serve dist)
+
+# Proost!
+
+Expo + React Native + Firebase Realtime Database.
+
+## Scripts
+- npm start (dev)
+- npm run web (web dev)
+- npm run build (static export → dist voor Netlify)
+
+## Deploy (Netlify)
+Publish dir: dist  
+Build command: npm install && npm run build
+
+## Fixes
+- Lege package.json gevuld
+- babel.config.js gerepareerd
+- .babelrc opgeschoond
+- metro.config.js gededupliceerd
+- netlify.toml build vereenvoudigd
+
+## Test lokaal
+npm install
+npm run build
+npx serve dist
